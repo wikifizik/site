@@ -1,14 +1,14 @@
 /*
- *In the name of ALLAH
+ In the name of ALLAH
  **/
 @font-face{
-        font-family : "faf";  src: url('fontawesome-webfont.woff');
+        font-family : "frc";  src: url('RobotoCondensed-Light.ttf');
 }
 @font-face{
         font-family : "fsc";  src: url('SourceCodePro-Regular.woff');
 }
 @font-face{
-        font-family : "flt";  src: url('Lato-Regular.woff');
+        font-family : "ful";  src: url('Ubuntu-L.ttf');
 }
 @font-face{
         font-family : "fos";  src: url('OpenSans-Regular.woff');
@@ -19,8 +19,12 @@
 @font-face{
         font-family : "fmn";  src: url('Montserrat-Regular.woff');
 }
+::selection{
+    color:#ff0e8b;
+   /* background-color:#426ecc;*/
+}
 	body{
-        font-family:serif,tahoma,solaimanlipi,sans-seriff;
+        font-family:frc,flb,fmn,fos,ful,serif,solaimanlipi,sans-seriff;
         font-size:13px;
         margin:0px;
         background-color:#c6c6c6;
@@ -45,7 +49,9 @@
     box-shadow:0px 5px 15px 3px #313131;
 }
 #menu a{
-    color:#676767;  padding:10px;   text-decoration:none;
+    color:#676767;
+    padding:10px;
+    text-decoration:none;
     }
 #menu a:hover{
     border-bottom:solid 3px #7031b9;
@@ -61,13 +67,14 @@ header{
     border-bottom:solid 4px #1407b3;
 }
 header  h1{
-    font-family:serif;
+    font-family:ful,serif;
     font-weight:normal;
     font-size:47px;
     padding:0px 20px;
+    color:#3133ba;
 }
 header h2{
-    font-family:sans-serif;
+    font-family:frc,sans-serif;
     font-weight:normal;
     font-size:17px;
     padding:0px 20px;
@@ -77,13 +84,13 @@ header h2 em{
     color:#1f60c2;
 }
 header h3{
-    font-family:serif;
+    font-family:fos,serif;
     font-weight:normal;
     font-size:17px;
     padding:0px 20px;
     font-style:italic;
     color:#2756ff;
-    margin-top:-40px;
+    margin-top:-30px;
 }
 #space{
     background-color:transparent;
@@ -99,34 +106,81 @@ header h3{
     border-bottom:solid 5px #6f12da;
 }
 p#headline{
-    padding:10px;
+    font-family:ful;
+    padding:20px;
     display:block;
-    background:linear-gradient(to bottom, #962cb4, #71572d) repeat scroll 0% 0% #FFF;
-    box-shadow:-2px -2px 4px 4px #313131;
-    margin:20px 60px;
+   /* background:linear-gradient(to bottom, #e6e6e6, #bfbfbf) repeat scroll 0% 0% #FFF;*/
+    box-shadow:-1px -1px 7px 1px #e6e6e6,
+                            inset .5px .5px 4px .1px #f0f0f0,
+                            1px 1px 7px 1px #e6e6e6;
+    margin: 60px;
     font-size:27px;
-    color:#eeeeee;
-    border-radius:10px;
+    color:#5752ee;
+    border-radius:3px;
+    border-bottom:solid 2px #d83912;
 }
 .subject span{
     display: inline-grid;
     position: relative;
     width: 20%;
     height:300px;
-    background-color:#5e40d6;
-    border-radius:10px;
-    box-shadow:4px 4px 4px 4px #313131;
-    padding:20px;
+    background-image:radial-gradient(#ffffff ,#f4f4f4);
+    border-radius:1px;
+    box-shadow:1px 1px 7px 2px #b0b0b0;
+    padding:15px;
     margin:5%;
+    border-bottom:solid 3px #ff00fb;
 }
 .subject em{
-    font-size:17px;
-    color:#f90;
+    font-family:frc;
+    font-size:27px;
+    color:#6f39ac;
+    text-decoration:none;
+    font-style:inherit;
     }
 .subject p{
     font-size:15px;
-    color:#00ccff;
+    color:#5a5a5a;
+    /*text-shadow:.5px .5px 4px #6c6c6c;*/
 }
+.subject img{
+    height:50px;
+    width:auto;
+}
+
+.feature{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #c3c1c1);
+    border-radius:5px;
+    box-shadow:2px 2px 14px 4px #7d7d7d;
+    line-height:30px;
+    border-bottom:solid 5px;
+    border-bottom-color:#a24b45;
+}
+.team{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #c3c1c1);
+    border-radius:5px;
+    box-shadow:2px 2px 14px 4px #7d7d7d;
+    line-height:30px;
+    border-bottom:solid 5px;
+    border-bottom-color:#b338c3;
+}
+
+.touch{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #c3c1c1);
+    border-radius:5px;
+    box-shadow:2px 2px 14px 4px #7d7d7d;
+    line-height:30px;
+    border-bottom:solid 5px;
+    border-bottom-color:#5acab2;
+}
+
+
 footer{
     background-color:#000;
     line-height:30px;
@@ -162,7 +216,7 @@ footer a{
 a:hover{
         text-decoration:underline;
        /* background-color:#ffffff;*/
-        color:#ab1515;
+        color:#838383;
 }
 footer img{
     height:25px;
