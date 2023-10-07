@@ -1,88 +1,86 @@
 /*
  *In the name of ALLAH
- **/
-@font-face{
-        font-family : "faf";  src: url('fontawesome-webfont.woff');
-}
-@font-face{
-        font-family : "fsc";  src: url('SourceCodePro-Regular.woff');
-}
-@font-face{
-        font-family : "flt";  src: url('Lato-Regular.woff');
-}
-@font-face{
-        font-family : "fos";  src: url('OpenSans-Regular.woff');
-}
-@font-face{
-        font-family : "flb";  src: url('LibreBaskerville-Regular.ttf');
-}
-@font-face{
-        font-family : "fmn";  src: url('Montserrat-Regular.woff');
-}
-	body{
-        font-family:serif,tahoma,solaimanlipi,sans-seriff;
-        font-size:13px;
-        margin:0px;
-        background-color:#cbec6f;
-    }
-    #container{
-        width:90%;
+ * Author : Md Nurulla Mollick
+ * www.nurulla.medium.com
+**/
+
+/*****       This is for index.html file         ******/
+
+#container{
+        width:100vw;
         background-color:transparent;
     }
-#intro{
-        width:100%;
-        height:215px;
-        background-color:#194ca5;
-        text-align:left;
-        position:relative;
-        z-index:500;
-}
-#menu{
-    background-color:#e2eeff;
-    line-height:50px;
-    font-size:15px;
-    clear:both;
-    box-shadow:0px 5px 15px 3px #313131;
-}
-#menu a{
-    color:#4f7031;
-    padding:10px;
-    text-decoration:none;
-    }
-    #menu a:hover{
-    background-color:#0c434b;
-    color:#fff;
-    border-radius:5px;
-    }
 header{
-    background-color:#00ccff;
-    text-align:left;
-    width:100%;
-    border-radius:10px 10px 10px 10px;
+        position:relative;
+        text-align:left;
+        height:calc(0.3446* 100vw + .2rem);
+        width:100vw;
+        background-color:var(--gold1);
 }
-header  h1{
-    font-family:serif;
+header > img{width:100vw;
+        height:auto;
+        position:absolute;
+        z-index: 100;
+}
+.img-txt{position:absolute;
+        z-index:200;
+}
+h1{ position:relative;
+    font-family:ful;
     font-weight:normal;
-    font-size:47px;
-    padding:0px 20px;
+    font-size:3rem;
+    padding:0rem .5rem;
+    color:var(--gold1);
+    top:1rem;
 }
-header h2{
-    font-family:sans-serif;
+h2{ position: relative;
+    font-family:ful;
     font-weight:normal;
-    font-size:17px;
-    padding:0px 20px;
+    font-size:1.25rem;
+    padding:.5rem;
+    line-height: 1.5rem;
+    color:var(--gold1);
+    float:left;
+    width:50vw;
+    text-align: justify;
+
 }
-header h2 em{
-    color:#15990e;
+@media only screen and (max-width:900px) {
+    header{ height:calc(0.3446* 100vw + 6vh);
+            width:100vw;
+            background-color: white;
+            border-bottom: .2rem solid var(--gold2);
+    }
+    h1{     font-size:2rem;
+            width:50vw;
+    }
+    h2{     width:50vw;
+            font-size:1rem;
+    }
 }
-header h3{
-    font-family:serif;
+@media only screen and (max-width:600px) {
+    header{ height:40vh;
+            width:100vw;
+            background-color: white;
+            border-bottom: .2rem solid var(--gold2);
+    }
+    h1{     font-size:2rem;
+            height:calc(.3446 * 100vw - 3.5rem );
+            width:50vw;
+    }
+    h2{     width:95vw;
+            font-size:1rem;
+    }
+}
+h3{
+    font-family:fos,serif;
     font-weight:normal;
-    font-size:17px;
-    padding:0px 20px;
+    font-size:13px;
+    padding:0px 0px;
     font-style:italic;
-    color:#2756ff;
-    margin-top:-40px;
+    color:#fff;
+    margin-top:-10px;
+    text-align:right;
 }
 .social {
     padding:5px;
@@ -106,4 +104,134 @@ footer{
 }
 .copy{
     text-align:center;
+}
+subject{
+    text-align:left;
+    padding:60px;
+    background:linear-gradient(135deg, #ffffff, #7cdce64f);
+    border-radius:5px;
+    box-shadow:0px .1px 2px .1px #00f;
+    line-height:30px;
+    border-bottom:solid 2px #6f12da;
+
+}
+p#headline{
+    font-family:ful;
+    padding:20px;
+    display:block;
+   /* background:linear-gradient(to bottom, #e6e6e6, #bfbfbf) repeat scroll 0% 0% #FFF;*/
+    box-shadow:-1px -1px 7px 1px #e6e6e6,
+                inset .5px .5px 4px .1px #f0f0f0,
+                1px 1px 7px 1px #e6e6e6;
+    margin: 0px;
+    font-size:27px;
+    color:#5752ee;
+    border-radius:3px;
+    border-bottom:solid 2px #d83912;
+}
+.sub{
+    font-family:frc;
+    font-size:27px;
+    color:#6f39ac;
+    text-decoration:none;
+    font-style:inherit;
+    }
+table{
+    font-size:15px;
+    color:#000000;
+    /*text-shadow:.5px .5px 4px #6c6c6c;*/
+    padding:20px;
+    background-image:radial-gradient(#ffffff ,#f4f4f4);
+    box-shadow:0px .2px 3px 0.2px #b0b0b0;
+    width:100%;
+}
+td{
+    padding:10px;
+}
+table img{
+    height:70px;
+    width:auto;
+}
+.feature{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #7cdce64f);
+    border-radius:5px;
+    box-shadow:0px .1px 2px .1px #00f;
+    line-height:30px;
+    border-bottom:solid 2px;
+    border-bottom-color:#a24b45;
+}
+.team{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #7cdce64f);
+    border-radius:5px;
+    box-shadow:0px .1px 2px .1px #00f;
+    line-height:30px;
+    border-bottom:solid 2px;
+    border-bottom-color:#b338c3;
+}
+
+.touch{
+    text-align:left;
+    padding:10px;
+    background:linear-gradient(135deg, #ffffff, #7cdce64f);
+    border-radius:5px;
+    box-shadow:0px .1px 2px .1px #00f;
+    line-height:30px;
+    border-bottom:solid 2px;
+    border-bottom-color:#5acab2;
+}
+
+
+footer{
+    font-family:ful;
+    background-color:#000;
+    line-height:30px;
+    padding:10px;
+    color:#ffffff;
+    text-align:left;
+    display:block;
+    box-shadow:-4px 0px 4px 1px #838383;
+}
+footer span{
+    width:30%;
+    display:inline-grid;
+    position:relative;
+    clear:both;
+    top:50px;
+    padding:5px;
+    text-align:left;
+}
+footer em{
+    font-size:17px;
+    color:#9ce4ec;
+    text-decoration:none;
+    left:30px;
+    position:relative;
+}
+footer a{
+        text-decoration:none;
+        line-height:30px;
+        color:#fff;
+        left:30px;
+        position:relative;
+        padding:0px 5px;
+}
+footer a:hover{
+        /*text-decoration:underline;*/
+        background-color:#151515;
+        color:#9166ff;
+}
+footer img{
+    height:25px;
+    width:auto;
+    position:relative;
+    top:7px;
+
+}
+.copy{
+    text-align:center;
+    background-color:#143e63;
 }
