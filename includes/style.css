@@ -1,0 +1,87 @@
+/***
+*** In the name of ALLAH
+*** Author : Md Nurulla Mollick
+*** www.nurulla.co.in
+***/
+@font-face{
+        font-family : "regular";  src: url('Montserrat-Regular.woff')format("woff");
+        font-weight:300;
+}
+@font-face{
+        font-family : "boldface";  src: url('Montserrat-Regular.woff')format("woff");
+        font-weight:900;
+}
+@font-face{
+        font-family : "alternate";  src: url('Ubuntu-Bold.ttf')format("ttf");
+}
+
+::selection{
+    color:#ff0e8b;
+   /* background-color:#426ecc;*/
+}
+:root{
+    --lblue:#BCE0FFff;
+    --dblue:#49ADFFff;
+    --text:#052A43;
+    --texta:#ffffff;
+    --lred:#E04166;
+    --dred:#590D29;
+    --shadow:#373737;
+}
+body{
+        font-family:boldface,reguler,serif,solaimanlipi,sans-seriff;
+        font-size:13px;
+        margin:0px; 
+        padding:0px;   
+        overflow: scroll;   
+    }
+:lang(bn){
+        font-family: solaimanlipi;
+}
+*[lang="bn"] {
+        font-family:solaimanlipi;
+}
+*[lang|="bn"] {
+        font-family: solaimanlipi;
+}
+.ticker{
+        margin:0px auto;
+        padding:10px 0px;
+        width:100%;
+        height:150px;
+        display: flex;
+}
+#ticker{
+        width:70%;
+        display: block;
+        float:left;
+        line-height:150px;
+        position:relative;
+}
+.ticker-button{
+        position: relative;
+        width:25%;
+        display:flex;
+        float:left;
+        margin:0 auto;
+        align-items: center;
+}
+#tx{
+        padding:10px;
+        font-size: 17px;
+        color:var(--text);
+}
+.tx-button{
+        background-image: linear-gradient(to right bottom, var(--lred), var(--dred));
+        padding:10px 20px;
+        border-radius: 10px;
+        border:none;
+        font-family:regular;
+        font-size: 15px;
+        font-weight:bold;
+        color:var(--texta);
+        box-shadow:1px 1px 5px 1px var(--shadow);
+}
+.tx-button:hover{
+        box-shadow: inset 1px 1px 5px 1px var(--shadow);
+}

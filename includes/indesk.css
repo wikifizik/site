@@ -1,0 +1,343 @@
+/*
+ *In the name of ALLAH
+ * Author : Md Nurulla Mollick
+ * www.nurulla.medium.com
+**/
+
+/*****       This is for index.html file         ******/
+
+#container{
+    width:100%;
+    margin:0px auto;
+    padding:0px;
+    background-image:linear-gradient(to left bottom, var(--lblue),var(--dblue));
+    font-family: regular;
+    }
+#navbar{
+    width:100%;
+    height:70px;
+    background-color: #0379FF;
+}
+.nav{
+    width:10vw;
+    color:var(--text2);
+    display:inline-flex;
+    line-height: 70px;
+}
+.nav2{
+    width: 20vw;
+    line-height: 70px;
+    display:inline-flex;
+    text-align: center;
+    color:var(--text2);
+}
+#head{
+    margin:0px;
+    width:100%;
+    height:110px;
+}
+.logo{
+    float:left;
+    padding:10px;
+    z-index:100;
+    position:sticky;
+}
+.initial{
+    float:right;
+    padding:0px;
+    z-index:100;
+    position: sticky;
+}
+header{
+    width:90%;
+    margin:0px auto;
+    background-image:linear-gradient(to right bottom, var(--lblue), var(--dblue));
+    z-index: 200;
+    position:sticky;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px 1px #373737;
+    padding:20px;
+    height:auto;
+}
+#text-box{
+    width:40vw;
+    padding:10px;
+    display:block;
+    float:left;
+    overflow-x:hidden;
+    overflow-y: hidden;
+    height:370px;
+}
+h1{
+    font-family:regular;
+    font-size: 31px;
+    color: var(--text);
+    margin:0px auto;
+    padding:10px;
+}
+.tagline{
+    font-family: regular;
+    font-size: 15px;
+    text-align: right;
+    color:var(--text);
+    margin:0px;
+    padding:10px;
+}
+h2{
+    font-family:regular;
+    font-size: 19px;
+    color: var(--text);
+    margin:0px auto;
+    padding:10px;
+    font-weight: inherit;
+    line-height:25px;
+}
+#header-img{
+    width:auto;
+    padding:10px;
+    align-items: first baseline;
+    display:flex;
+    margin:0 auto;
+}
+.header-img{
+    width:45vw;
+    height: auto;
+    border-radius: 30px;
+    border: 10px solid white;
+    box-shadow: 1px 1px 10px 1px var(--shadow);
+}
+
+#course{
+    background-image: url("../img/course.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:1000px;
+    width: 100%;
+    position:sticky;
+}
+#course-left{
+    width:30%;
+    position:relative;
+    float:left;
+    display: block;
+}
+#course-right{
+    width:70%;
+    position:relative;
+    float:right;
+    display: block;
+}
+.course-title{
+    padding:20px;
+    margin:20px 0px;
+    background-color: var(--text);
+    color:var(--texta);
+    font-family: regular;
+    font-size: 21px;
+}
+.course-contain{
+    padding:20px;
+    margin:20px 0px;
+    height:780px;
+    background-color: #58b4ff6e;
+}
+.course-stripe{
+    width:20px;
+    height:750px;
+    background-image: linear-gradient(to bottom, #ffffff, #6B6B6B);
+    position:relative;
+    float: left;
+}
+.course-text{
+    width:95%;
+    height:500px;
+    position:relative;
+    padding:20px;
+    display:block;
+}
+.course-details{
+    display:block;
+    padding:20px;
+}
+.course-title-head{
+    height:140px;
+    display: flex;
+}
+.course-logo{
+    width:100px;
+    padding:20px;
+}
+.course-logo > img{
+    width:100px;
+    height:100px;
+}
+.course-title-name{
+    font-size:19px;
+    line-height:100px;
+    width:70%;
+    padding:20px;
+}
+.course-feature{
+    font-size:15px;
+}
+.course-feature > p{
+    font-style: italic;
+}
+.course-feature > ul{
+    list-style-type: none;
+    line-height:30px;
+}
+.course-feature > ul li:before{
+    content: '\2714\0020';
+    color:#d9ff0a;
+}
+
+/* Mission & Vision*/
+#vision{
+    height:700px;
+    display:block;
+    position:relative;
+}
+.vision-title{
+    height:70px;
+    padding:20px;
+    line-height:70px;
+    font-size:19px;
+    width:auto;
+}
+#vision-contain{
+    display:flex;
+}
+.vision-left{
+    width:40%;
+    margin:0 auto;
+}
+.vision-img{
+    width:100px;
+    margin-top:100px;
+    margin-left: 50px;;
+}
+.quote{
+    padding:20px;
+    background-color:#afafaf59;
+    border-radius:20px;
+    height:100px;
+}
+blockquote {
+    text-indent: 0px;
+    border-left: 2px solid rgba(157, 248, 9, 0.479);
+    font-size:15px;
+    line-height:50px;
+}
+blockquote::before,
+blockquote::after {
+  animation: dancing 1s linear infinite;
+  display: inline-block;
+  transform: rotate(15deg);
+}
+
+@keyframes dancing {
+  0% {
+    transform: rotate(15deg) scale(2);
+  }
+
+  25% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(-15deg) scale(2);
+  }
+
+  75% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(15deg) scale(2);
+  }
+}
+@supports ( hanging-punctuation: first) {
+    blockquote {
+      text-indent: 0;
+      hanging-punctuation: first;
+    }
+}  
+blockquote::before {
+    content: open-quote;
+    font-size:25px;
+    line-height:15px;
+}
+blockquote::after {
+    content: close-quote;
+    font-size:25px;
+}
+.vision-right > article{
+
+    font-size:15px;
+    line-height:30px;
+    padding: 20px;
+}
+.vision-article::first-letter{
+    -webkit-initial-letter: 2 1;
+    initial-letter: 2 1;
+}
+
+
+/* Footer */
+footer{
+    width:auto;
+    height:auto;
+    margin-bottom:0vh;
+    background-color:#000;
+    padding:0px;
+    display:block;
+    font-family:regular;
+    font-size:15px;
+    line-height:20px;
+}
+#footer-menu{
+    width:auto;
+    padding:20px;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+}
+#copyright{
+    width:auto;
+    text-align:center;
+    padding:20px;
+    color:var(--text);
+    background-color:var(--lblue);
+    margin:0 auto;
+    position:relative;
+}
+.footer-menu-title{
+    color:#9ce4ec;
+}
+.footer-col {
+     display:block;
+     width:30vw;
+     padding:20px;
+     position: relative;
+}
+#footer-menu > .footer-col > em {
+    display:block;
+    color:var(--lblue);
+}
+#footer-menu > .footer-col > a{
+    text-decoration:none;
+    display:block;
+    color:var(--texta);
+    padding:10px 20px;
+}
+#footer-menu > .footer-col > a:hover{
+    background-color:#151515;
+    color:#9166ff;
+}
+#footer-menu >.footer-col > a > img{
+    height:20px;
+}
+address{
+    color:var(--lblue);
+}
