@@ -1,1 +1,4 @@
-www.wikifizik.co.in
+User-agent: *
+Allow: /
+
+Sitemap: https://www.wikifizik.co.in/sitemap.xml   
